@@ -1,16 +1,14 @@
 # RecordBin Python
 
 [![PyPi](https://img.shields.io/pypi/v/recordbin.svg)](https://pypi.python.org/pypi/recordbin)
-
 [![Build Status](https://travis-ci.org/gtalarico/recordbin-python.svg?branch=master)](https://travis-ci.org/gtalarico/recordbin-python)
-
 [![codecov](https://codecov.io/gh/gtalarico/recordbin-python/branch/master/graph/badge.svg)](https://codecov.io/gh/gtalarico/recordbin-python)
 
 Python Client for Python [RecordBin](http://www.github.com/gtalarico/recordbin)
 
 ---
 
-![project-logo](https://github.com/gtalarico/recordbin/blob/master/art/logo.png)
+![project-logo](https://github.com/gtalarico/recordbin-python/blob/master/art/logo.png)
 
 ## Installing
 
