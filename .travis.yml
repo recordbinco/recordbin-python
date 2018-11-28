@@ -1,0 +1,40 @@
+# TODO: Add Tox for multiversion?
+language: python
+git:
+  depth: 2
+python:
+  # - 2.7
+  # - 3.4
+  # - 3.5
+  - 3.6
+  - 3.7
+
+branches:
+  only:
+    - master
+    - dev/main
+install:
+  - make init
+script:
+  - make ci
+after_success:
+  - pip install codecov
+  - codecov
+
+# Assuming you have installed the travis-ci CLI tool, after you
+# create the Github repo and add it to Travis, run the
+# following command to finish PyPI deployment setup:
+# $ travis encrypt --add deploy.password
+# deploy:
+#   provider: pypi
+#   distributions: sdist bdist_wheel
+#   user: gtalarico
+#   password:
+#     secure: PLEASE_REPLACE_ME
+#   on:
+#     tags: true
+#     repo: gtalarico/pipenv-pipes
+#     python: 3.6
+# TODO: Integrate Deployment
+# https://docs.travis-ci.com/user/encryption-keys/
+# https://docs.travis-ci.com/user/languages/python/#Using-Tox-as-the-Build-Script
