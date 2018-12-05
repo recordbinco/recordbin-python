@@ -22,6 +22,6 @@ class RecordBinAuth(requests.auth.AuthBase):
         self.token = token
 
     def __call__(self, request):
-        auth_token = {"Authorization": "Token {}".format(self.token)}
+        auth_token = {"Authorization": "AppToken {}".format(self.token)}
         request.headers.update(auth_token)
         return request

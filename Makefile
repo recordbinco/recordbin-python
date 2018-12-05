@@ -10,9 +10,8 @@ ci:
 	pipenv run flake8
 	pipenv run pytest
 
-pypi:
+release:
 	pip install 'twine>=1.5.0'
 	python setup.py sdist bdist_wheel --universal
 	twine upload dist/*
 	rm -fr build dist .egg requests.egg-info
-
