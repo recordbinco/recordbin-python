@@ -1,4 +1,4 @@
-__version__ = "0.1.0.alpha4"
+__version__ = "0.1.1.alpha1"
 __name__ = "recordbin"
 __description__ = "Python API Client for RecordBin"
 __url__ = "https://github.com/gtalarico/recordbin-python"
