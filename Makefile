@@ -1,11 +1,24 @@
-.PHONY: docs
+.PHONY: usage init test ci release
+
+# Colors
+NC=\x1b[0m
+L_GREEN=\x1b[32;01m
+
+## usage: print useful commands
+usage:
+	@echo "$(L_GREEN)Choose a command: $(PWD) $(NC)"
+	@bash -c "sed -ne 's/^##//p' ./Makefile | column -t -s ':' |  sed -e 's/^/ /'"
+
+## init:
 init:
 	pip install pipenv --upgrade
 	pipenv install --dev --skip-lock
-test:
-	# This runs all of the tests, on both Python 2 and Python 3.
-	tox
 
+## test: run tests
+test:
+	pytest
+
+## ci: run tests
 ci:
 	pipenv run flake8
 	pipenv run pytest

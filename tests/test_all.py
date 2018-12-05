@@ -18,7 +18,7 @@ def test_auth_header(bin, DATA, RESPONSE_DATA, TOKEN, URL):
     responses.add(responses.POST, f"{URL}/api/v1/records/", status=201)
     resp = bin.post(DATA).result()
     auth_header = resp.request.headers["Authorization"]
-    assert auth_header == f"Token {TOKEN}"
+    assert auth_header == f"AppToken {TOKEN}"
 
 
 @responses.activate
