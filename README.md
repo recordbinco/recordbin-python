@@ -1,7 +1,7 @@
 # RecordBin Python
 
 [![PyPi](https://img.shields.io/pypi/v/recordbin.svg)](https://pypi.python.org/pypi/recordbin)
-[![Build Status](https://travis-ci.org/gtalarico/recordbin-python.svg?branch=master)](https://travis-ci.org/gtalarico/recordbin-python)
+[![CircleCI](https://circleci.com/gh/gtalarico/recordbin-python.svg?style=svg)](https://circleci.com/gh/gtalarico/recordbin-python)
 [![codecov](https://codecov.io/gh/gtalarico/recordbin-python/branch/master/graph/badge.svg)](https://codecov.io/gh/gtalarico/recordbin-python)
 
 Python Client for Python [RecordBin](http://www.github.com/gtalarico/recordbin-api)
