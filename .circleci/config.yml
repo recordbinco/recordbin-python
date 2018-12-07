@@ -46,3 +46,9 @@ jobs:
           command: |
             . venv/bin/activate
             flake8 .
+
+      - run:
+          name: upload coverage report
+          command: |
+            pipenv install codecov --dev
+            codecov -t "$CODECOV_TOKEN"
