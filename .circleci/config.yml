@@ -50,5 +50,6 @@ jobs:
       - run:
           name: upload coverage report
           command: |
-            pipenv install codecov --dev
+            . venv/bin/activate
+            pip install codecov
             codecov -t "$CODECOV_TOKEN"
