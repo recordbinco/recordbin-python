@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/gtalarico/recordbin-python.svg?branch=master)](https://travis-ci.org/gtalarico/recordbin-python)
 [![codecov](https://codecov.io/gh/gtalarico/recordbin-python/branch/master/graph/badge.svg)](https://codecov.io/gh/gtalarico/recordbin-python)
 
-Python Client for Python [RecordBin](http://www.github.com/gtalarico/recordbin)
+Python Client for Python [RecordBin](http://www.github.com/gtalarico/recordbin-api)
 
 ---
 
@@ -20,7 +20,7 @@ pip install recordbin
 
 ```
 >>> from recordbin import RecordBin
->>> recordbin = RecordBin('http://ww-recordbin.herokuapp.com', token='123')
+>>> recordbin = RecordBin('http://api.recordbin.co', token='123')
 >>> recordbin.post({'username': 'gtalarico'})
 ```
 
