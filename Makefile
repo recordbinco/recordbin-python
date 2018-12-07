@@ -18,11 +18,15 @@ init:
 test:
 	pytest
 
-## ci: run tests
+## ci: Circle CI runner
 ci:
-	pipenv run flake8
-	pipenv run pytest
+	circleci local execute
 
+## lint: Flake8
+lint:
+	pipenv run flake8
+
+## release: Build and Release on Pypi
 release:
 	pip install 'twine>=1.5.0'
 	python setup.py sdist bdist_wheel --universal
